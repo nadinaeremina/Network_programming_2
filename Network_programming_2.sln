@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Network_programming_2", "Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Weather\Weather.csproj", "{8D0EDDBC-CB9F-4334-977B-83F313C87C4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP", "TCP_Client\TCP.csproj", "{0EB37F8D-E2C3-4C3D-8267-721DF55B0A5F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP_Client", "TCP_Client\TCP_Client.csproj", "{A9D19276-39B9-47FA-933D-78DB74F968E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP_Server", "TCP_Server\TCP_Server.csproj", "{1FB33A56-25CB-4C9E-8B9D-6881E2EC8720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP_Listener_Client", "TCP_Listener_Client\TCP_Listener_Client.csproj", "{5C49CADA-D4F8-493B-8565-B4D9A3CDB567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,6 @@ Global
 		{8D0EDDBC-CB9F-4334-977B-83F313C87C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D0EDDBC-CB9F-4334-977B-83F313C87C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D0EDDBC-CB9F-4334-977B-83F313C87C4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EB37F8D-E2C3-4C3D-8267-721DF55B0A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EB37F8D-E2C3-4C3D-8267-721DF55B0A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EB37F8D-E2C3-4C3D-8267-721DF55B0A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EB37F8D-E2C3-4C3D-8267-721DF55B0A5F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9D19276-39B9-47FA-933D-78DB74F968E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A9D19276-39B9-47FA-933D-78DB74F968E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9D19276-39B9-47FA-933D-78DB74F968E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{1FB33A56-25CB-4C9E-8B9D-6881E2EC8720}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FB33A56-25CB-4C9E-8B9D-6881E2EC8720}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FB33A56-25CB-4C9E-8B9D-6881E2EC8720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C49CADA-D4F8-493B-8565-B4D9A3CDB567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C49CADA-D4F8-493B-8565-B4D9A3CDB567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C49CADA-D4F8-493B-8565-B4D9A3CDB567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C49CADA-D4F8-493B-8565-B4D9A3CDB567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
