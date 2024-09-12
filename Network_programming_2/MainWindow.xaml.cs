@@ -97,6 +97,8 @@ namespace HTTP_Client
                     OutPutTB.Text += todo.ToString() + "\n";
                 }
             }
+
+            
         }
 
         // для отправки сообщения

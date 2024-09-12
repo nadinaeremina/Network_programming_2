@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text;
 using System.Windows;
@@ -18,47 +19,7 @@ namespace Weather
     /// </summary>
     public partial class MainWindow : Window
     {
-        public class Current
-        {
-            string? Time; 
-            int? Interval; 
-            double? temperature_2m; 
-            double? wind_speed_10m; 
-            public Current()
-            {
-                Time = "";
-                Interval = 0;
-                temperature_2m = 0.0;
-                wind_speed_10m = 0.0;
-            }
-        };
-
-        public class Current_units
-        {
-            string? Time;
-            string? Interval;
-            string? temperature_2m;
-            string? wind_speed_10m;
-            public Current_units()
-            {
-                Time = "";
-                Interval = "";
-                temperature_2m = "";
-                wind_speed_10m = "";  
-            }
-        }
-
-        public record class Todo(
-        double? latitude = null,
-        double? longitude = null,
-        decimal? generationtime_ms = null,
-        int? utc_offset_seconds = null,
-        string? timezone = null,
-        string? timezone_abbreviation = null,
-        decimal? elevation = null,
-        Current_units? current_units = null,
-        Current? current = null
-        );
+        public delegate void Add_text(string par1, string par2);
 
         private HttpClient client;
         private string jsonPlaceholder = "https://api.open-meteo.com/";
@@ -77,6 +38,12 @@ namespace Weather
                 // по умолчанию - 100 секунд // лучше не ставить меньше 15 секунд
                 Timeout = TimeSpan.FromSeconds(120)
             };
+        }
+
+        void Add_text_to(string text_wind, string txt_temperature)
+        {
+            wind_txt.Text = text_wind;
+            temp_txt.Text = txt_temperature;
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
@@ -110,19 +77,23 @@ namespace Weather
             // так как у нас 'todos' - возвращается массив
             // нужно раскрыть шаблонный метод 'GetFromJsonAsync' в кол-цию
             // добавляем св-во фиьтрации
-            var todos = await client.GetFromJsonAsync<List<Todo>>("v1/forecast?latitude=56&longitude=60&current=temperature_2m,wind_speed_10m");
+            Todo todo = await client.GetFromJsonAsync<Todo>("v1/forecast?latitude=56&longitude=60&current=temperature_2m,wind_speed_10m");
             // получим json-файл - автоматически преобразует в список файлов типа 'Todo'
             // в этот метод можно передать то, чем я буду дополнять адрес (св-ва фильтрации)
-
+            
             OutPutTB.Text = "";
-
-            if (todos != null)
+            
+            if (todo != null)
             {
-                foreach (var todo in todos)
-                {
-                    OutPutTB.Text += todo.ToString() + "\n";
-                }
+                OutPutTB.Text += todo.ToString();
             }
+
+            string[] myArray = new string[2];
+
+            myArray[0] = todo.current.wind_speed_10m.ToString() + todo.current_units.wind_speed_10m.ToString();
+            myArray[1] = todo.current.temperature_2m.ToString() + todo.current_units.temperature_2m.ToString();
+
+            this.Dispatcher.BeginInvoke(new Add_text(Add_text_to), myArray);
         }
     }
 }

@@ -5,12 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Weather"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Weather" Height="400" Width="500">
     <Grid>
         <StackPanel>
-            <TextBox TextWrapping="Wrap" x:Name="OutPutTB" Height="277"></TextBox>
-            <Button Click="Button_Click">Weather</Button>
-            <Button Click="Button_Click_1" >Weather_JS</Button>
+            <TextBox TextWrapping="Wrap" x:Name="OutPutTB" Height="100"></TextBox>
+            <TextBlock TextAlignment="Center" FontSize="18" FontWeight="Bold">Yekaterinburg</TextBlock>
+            <Button Margin="10" Width="100" Click="Button_Click">Weather</Button>
+            <Button Margin="10" Width="100" Click="Button_Click_1" >Weather_JS</Button>
+            <StackPanel Width="100">
+                <TextBlock>Temperature:</TextBlock>
+                <TextBox x:Name="temp_txt"></TextBox>
+                <TextBlock>Wind speed:</TextBlock>
+                <TextBox x:Name="wind_txt"></TextBox>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>
