@@ -1,0 +1,19 @@
+﻿<Window x:Class="Encryption.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Encryption"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="InitialTB" Margin="5"/>
+            <Button x:Name="EncryptMD5Button" Margin="5" Click="EncryptMD5Button_Click">Encrypt MD5</Button>
+            <Button x:Name="EncryptSHA1Button" Margin="5" Click="EncryptSHA1Button_Click">Encrypt SHA-1</Button>
+            <Button x:Name="EncryptSHA384Button" Margin="5" Click="EncryptSHA384Button_Click">Encrypt SHA-384</Button>
+            <Button x:Name="EncryptSHA512Button" Margin="5" Click="EncryptSHA512Button_Click">Encrypt SHA-512</Button>
+            <TextBox x:Name="EncryptedTB" Margin="5" IsReadOnly="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

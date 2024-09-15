@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCP_Server", "TCP_Server\TC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCP_Listener_Client", "TCP_Listener_Client\TCP_Listener_Client.csproj", "{5C49CADA-D4F8-493B-8565-B4D9A3CDB567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat_Listener_Client_WPF", "Chat_Listener_Client_WPF\Chat_Listener_Client_WPF.csproj", "{5C8C6558-F597-4252-9680-280C53E58B7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat_Listener_Client_WPF", "Chat_Listener_Client_WPF\Chat_Listener_Client_WPF.csproj", "{5C8C6558-F597-4252-9680-280C53E58B7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encryption", "Encryption\Encryption.csproj", "{D968D094-0DB8-4569-B4B0-03752CC023CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5C8C6558-F597-4252-9680-280C53E58B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C8C6558-F597-4252-9680-280C53E58B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C8C6558-F597-4252-9680-280C53E58B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D968D094-0DB8-4569-B4B0-03752CC023CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D968D094-0DB8-4569-B4B0-03752CC023CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D968D094-0DB8-4569-B4B0-03752CC023CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D968D094-0DB8-4569-B4B0-03752CC023CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
