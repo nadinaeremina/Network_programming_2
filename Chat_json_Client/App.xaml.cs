@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace Chat_Listener_Client_WPF
+namespace Chat_json_Client
 {
     /// <summary>
     /// Interaction logic for App.xaml
