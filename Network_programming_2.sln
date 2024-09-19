@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCP_Listener_Client", "TCP_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encryption", "Encryption\Encryption.csproj", "{D968D094-0DB8-4569-B4B0-03752CC023CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat_json_Client", "Chat_json_Client\Chat_json_Client.csproj", "{113D6EC6-DDE9-4940-A7A7-BBF26541C565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat_json_Client", "Chat_json_Client\Chat_json_Client.csproj", "{113D6EC6-DDE9-4940-A7A7-BBF26541C565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat_json_Server", "Chat_json_Server\Chat_json_Server.csproj", "{4085700C-1F3B-42A0-AD5A-89BF44B6F5C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat_json_Server", "Chat_json_Server\Chat_json_Server.csproj", "{4085700C-1F3B-42A0-AD5A-89BF44B6F5C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat_Client_Listener", "Chat_Client_Listener\Chat_Client_Listener.csproj", "{B8E95E11-C41B-4F6A-BA5F-098C97083192}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{4085700C-1F3B-42A0-AD5A-89BF44B6F5C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4085700C-1F3B-42A0-AD5A-89BF44B6F5C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4085700C-1F3B-42A0-AD5A-89BF44B6F5C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E95E11-C41B-4F6A-BA5F-098C97083192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E95E11-C41B-4F6A-BA5F-098C97083192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E95E11-C41B-4F6A-BA5F-098C97083192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E95E11-C41B-4F6A-BA5F-098C97083192}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

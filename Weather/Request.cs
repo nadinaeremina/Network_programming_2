@@ -1,5 +1,4 @@
-﻿
-// Paste special - Paste JSON as Classes
+﻿// Edit - Paste special - Paste JSON as Classes
 
 public class Todo
 {
